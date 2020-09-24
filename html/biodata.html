@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Foluke">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+    <!-- This Page CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/extra-libs/prism/prism.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="horizontal" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar px-5 bg-primary " data-header-position="fixed" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md">
+                <div class="" data-logobg="skin6">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                    <div class="navbar-brand">
+                        <!-- Logo icon -->
+                        <a href="index.html">
+                            <b class="logo-icon">
+                                <!-- Dark Logo icon -->
+                                <img src="../images/logo.png" alt="homepage" class="dark-logo" width="60" />
+                                <!-- Light Logo icon -->
+                            </b>
+                        </a>
+                    </div>
+
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                        data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
+                            class="ti-more"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+
+                    <ul class="navbar-nav float-left mr-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">College home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">Helpdesk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="settings.html" class="nav-link">Settings</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <p class="nav-link dropdown-toggle pl-md-3 position-relative" href="javascript:void(0)"
+                                id="caret-down" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Other links
+                                <span class="">
+                                    <i class="fas fa-caret-down"></i></span>
+                            </p>
+                            <div class="dropdown-menu dropdown-menu-left animated bounceInDown">
+                                <ul class="list-style-none">
+                                    <li>
+                                        <div class="message-center position-relative">
+                                            <!-- Message -->
+                                            <a href="biodata.html" class="message-item d-flex px-3">
+                                                <div class=" rounded-circle"><img
+                                                        src="https://portal.yabatech.edu.ng/portalplus/assets/icons/user.svg"
+                                                        alt="biodata" width="23"></div>
+                                                <div class="w-100 pr-1 pl-2">
+                                                    <h6 class="mt-2 message-title mb-0 ">Biodata</h6>
+
+                                                </div>
+                                            </a>
+                                            <a href="fees.html" class="message-item d-flex px-3">
+                                                <div class="rounded-circle  mt-0"><img
+                                                        src="https://portal.yabatech.edu.ng/portalplus/assets/icons/money_2.svg"
+                                                        alt="reg" width="23"></div>
+                                                <div class="w-100 pr-1 pl-2">
+                                                    <h6 class="mt-2 message-title text-nowrap mb-0 ">Fee payment &
+                                                        registration</h6>
+
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void(0)" class="message-item d-flex px-3">
+                                                <div class="rounded-circle "><img
+                                                        src="https://portal.yabatech.edu.ng/portalplus/assets/icons/hostel.svg"
+                                                        alt="accomodation" width="23"></div>
+                                                <div class="w-100 pr-1 pl-2">
+                                                    <h6 class="mt-2 message-title text-nowrap mb-0 ">Hostel &
+                                                        accomodation</h6>
+
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void(0)" class="message-item d-flex px-3">
+                                                <div class="rounded-circle "><img
+                                                        src="https://portal.yabatech.edu.ng/portalplus/assets/icons/checklist.svg"
+                                                        alt="confirmation" width="23"></div>
+                                                <div class="w-100 pr-1 pl-2">
+                                                    <h6 class="mt-2 message-title text-nowrap mb-0 ">Payment
+                                                        confirmation and validation</h6>
+
+                                                </div>
+                                            </a>
+
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+
+                    <ul class="navbar-nav float-right">
+
+                        <li class="nav-item d-flex">
+                            <div>
+                                <img src="../assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle mr-2"
+                                    width="40">
+                                <span class="text-dark">Foluke Odusanya</span>
+                            </div>
+
+                            <span> <a href="">
+                                    <div class=" sl-icon text-white font-20">
+                                        <i class="icon-power"></i>
+                                    </div>
+                                </a>
+                            </span>
+
+
+                        </li>
+
+
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+
+
+
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+
+
+            <div class="container-fluid">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card w-75">
+                                <img class="card-img-top img-fluid " src="../assets/images/big/img1.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title text-primary">F/HD/18/3210053</h4>
+
+                                </div>
+                            </div>
+                            <div class="border-bottom pb-3">
+                                <h5 class="text-dark font-weight-medium">ODUSANYA FOLUKE</h5>
+                                <h6 class="">HND (COMPUTER SCIENCE) FULL TIME</h6>
+                            </div>
+
+                            <a href="javascript:void(0)"
+                                class="btn btn-light text-danger font-12 mt-4 px-3 py-2">Download your course material
+                                here</a>
+                            <div class="session container mt-4 mb-5 border-top pt-4">
+                                <div class="mb-4">
+                                    <h6 class="session-head font-weight-small text-dark mb-3">Academic session:</h6>
+                                    <h5 class="session-text font-weight-medium text-dark mb-3"><span
+                                            class="session-span mr-4 "><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></span>2019/2020
+                                    </h5>
+                                </div>
+                                <div class="mb-4">
+                                    <h6 class="session-head font-weight-small text-dark mb-3">Current semester:</h6>
+                                    <h5 class="session-text font-weight-medium text-dark"><span
+                                            class="session-span mr-4 "><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></span>FIRST
+                                        SEMESTER</h5>
+                                </div>
+                                <div class="mb-4">
+                                    <h6 class="session-head font-weight-small text-dark mb-3">Current level:</h6>
+                                    <h5 class="session-text font-weight-medium text-dark"><span
+                                            class="session-span mr-4 "><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></span>200
+                                        LEVEL</h5>
+                                </div>
+                                <div class="mb-4">
+                                    <h6 class="session-head font-weight-small text-dark mb-3">Student status:</h6>
+                                    <h5 class="session-text font-weight-medium text-dark"><span
+                                            class="session-span mr-4 "><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></span>ACTIVE
+                                    </h5>
+                                </div>
+                                <div class="mb-4">
+                                    <h6 class="session-head font-weight-small text-dark mb-3">School fees status:</h6>
+                                    <h5 class="session-text font-weight-medium text-dark"><span
+                                            class="session-span mr-4 "><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></span>PAID
+                                        COMPLETE</h5>
+                                </div>
+                                <div class="mb-4">
+                                    <h6 class="session-head font-weight-small text-dark mb-3">Course registration
+                                        status:</h6>
+                                    <h5 class="session-text font-weight-medium text-dark"><span
+                                            class="session-span mr-4 "><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></span>REGISTERED
+                                    </h5>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-8 ">
+                            <h2 class="text-dark mt-2">Biodata</h2>
+                            <div class="biodata mt-4 mb-5">
+                                
+                                <div class="biodata-details border-top pt-3 pb-2 border-light row container mr-5">
+                                    <div class="biodata-arrow"><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></div>
+                                    <h5 class="biodata-head font-weight-small mr-1 col-lg-4 col-md-4">Full Name:</h5>
+                                    <h5 class="biodata-title text-dark font-weight-medium ml-1 col-lg-3 col-md-5"> FOLUKE ODUSANYA</h5>
+                                </div>
+                                
+                                <div class="biodata-details border-top pt-3 pb-2 border-light row container mr-5">
+                                    <div class="biodata-arrow"><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></div>
+                                    <h5 class="biodata-head font-weight-small mr-1 col-lg-4 col-md-4">Matric Number:</h5>
+                                    <h5 class="biodata-title text-dark font-weight-medium ml-1 col-lg-3 col-md-5"> F/HD/20/3212020</h5>
+                                </div>
+                                
+                                <div class="biodata-details border-top pt-3 pb-2 border-light row container mr-5">
+                                    <div class="biodata-arrow"><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></div>
+                                    <h5 class="biodata-head font-weight-small mr-1 col-lg-4 col-md-4">Programme Type:</h5>
+                                    <h5 class="biodata-title text-dark font-weight-medium ml-1 col-lg-3 col-md-5"> FULL TIME</h5>
+                                </div>
+                                
+                                <div class="biodata-details border-top pt-3 pb-2 border-light row container mr-5">
+                                    <div class="biodata-arrow"><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></div>
+                                    <h5 class="biodata-head font-weight-small mr-1 col-lg-4 col-md-4">Session:</h5>
+                                    <h5 class="biodata-title text-dark font-weight-medium ml-1 col-lg-3 col-md-5"> 2019/2020</h5>
+                                </div>
+                                
+                                <div class="biodata-details border-top pt-3 pb-2 border-light row container mr-5">
+                                    <div class="biodata-arrow"><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></div>
+                                    <h5 class="biodata-head font-weight-small mr-1 col-lg-4 col-md-4">School:</h5>
+                                    <h5 class="biodata-title text-dark font-weight-medium ml-1 col-lg-3 col-md-5" >TECHNOLOGY</h5>
+                                </div>
+                            
+                                <div class="biodata-details border-top pt-3 border-light row container mr-5">
+                                    <div class="biodata-arrow"><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></div>
+                                    <h5 class="biodata-head font-weight-small mr-1 col-lg-4 col-md-4">Department:</h5>
+                                    <h5 class="biodata-title text-dark font-weight-medium ml-1 col-lg-3 col-md-5
+                                    col-md-5"> COMPUTER SCIENCE</h5>
+                                </div>
+                                
+                                <div class="biodata-details border-top pt-3 pb-2 border-light row container mr-5">
+                                    <div class="biodata-arrow"><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></div>
+                                    <h5 class="biodata-head font-weight-small mr-1 col-lg-4 col-md-4">Level:</h5>
+                                    <h5 class="biodata-title text-dark font-weight-medium ml-1 col-lg-3 col-md-5">200 LEVEL</h5>
+                                </div>
+                                
+                                <div class="biodata-details border-top pt-3 pb-2 border-light row container mr-5">
+                                    <div class="biodata-arrow"><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></div>
+                                    <h5 class="biodata-head font-weight-small mr-1 col-lg-4 col-md-4">Email:</h5>
+                                    <h5 class="biodata-title text-dark font-weight-medium ml-1 col-lg-3 col-md-5">ODUSANYA.FOLUKEMI@GMAIL.COM</h5>
+                                </div>
+                                
+                                <div class="biodata-details border-top pb-2 pt-3 border-light row container mr-5">
+                                    <div class="biodata-arrow"><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></div>
+                                    <h5 class="biodata-head font-weight-small mr-1 col-lg-4 col-md-4">Phone Number:</h5>
+                                    <h5 class="biodata-title text-dark font-weight-medium ml-1 col-lg-3 col-md-5"> +2348132693859</h5>
+                                </div>
+                                
+                                <div class="biodata-details border-top pt-3 pb-2 border-light row container mr-5">
+                                    <div class="biodata-arrow"><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></div>
+                                    <h5 class="biodata-head font-weight-small mr-1 col-lg-4 col-md-4">State of Origin:</h5>
+                                    <h5 class="biodata-title text-dark font-weight-medium ml-1 col-lg-3 col-md-5"> LAGOS</h5>
+                                </div>
+                                
+                                <div class="biodata-details border-top pt-3 border-light row container mr-5 ">
+                                    <div class="biodata-arrow"><i
+                                                class="fas text-primary fa-arrow-alt-circle-right"></i></div>
+                                    <h5 class="biodata-head font-weight-small mr-1 col-lg-4 col-md-4">Local Govt Area:</h5>
+                                    <h5 class="biodata-title text-dark font-weight-medium ml-1 col-lg-3 col-md-5"> IKORODU</h5>
+                                </div>
+                
+                                <div class="biodata-button row col-lg-10 col-md-9 mt-5">
+                                    <a href="javascript:void(0)" class=" col-lg-5 col-md-3 ml-2 text-center font-18 font-weight-medium py-2 bg-light border pb-1 pt-1 border-light text-primary  mt-2"> <span class="text-primary"><i class="fas fa-print"></i></span> &nbsp;Print</a>
+                                    <a href="index.html" class=" col-lg-5 col-md-3  ml-2 text-center font-18 font-weight-medium py-2 bg-light border pb-1 pt-1 border-light text-primary  mt-2"> <span class="text-primary"><i class="fas fa-arrow-left"></i></span> &nbsp;
+                                        Go back</a>
+                
+                                </div>
+                                
+                
+                            </div>
+                
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Page wrapper  -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Wrapper -->
+        <!-- ============================================================== -->
+        <!-- End Wrapper -->
+        <!-- ============================================================== -->
+        <!-- All Jquery -->
+        <!-- ============================================================== -->
+        <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap tether Core JavaScript -->
+        <script src="../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+        <script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- apps -->
+        <!-- apps -->
+        <script src="../dist/js/app-style-switcher.js"></script>
+        <script src="../dist/js/feather.min.js"></script>
+        <!-- slimscrollbar scrollbar JavaScript -->
+        <script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+        <script src="../assets/extra-libs/sparkline/sparkline.js"></script>
+        <!--Wave Effects -->
+        <!-- themejs -->
+        <!--Menu sidebar -->
+        <script src="../dist/js/sidebarmenu.js"></script>
+        <!--Custom JavaScript -->
+        <script src="../dist/js/custom.min.js"></script>
+        <!-- This Page JS -->
+        <script src="../assets/extra-libs/prism/prism.js"></script>
+</body>
+
+</html>
