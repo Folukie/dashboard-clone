@@ -41,120 +41,97 @@
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
-        <header class="topbar px-5 bg-primary" data-header-position="fixed" data-sidebar-position="fixed"  data-navbarbg="skin5">
-            <nav class="navbar top-navbar navbar-expand-md">
-                <div class="" data-logobg="skin6">
-                    <!-- This is for the sidebar toggle which is visible on mobile only -->
-                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
-                            class="ti-menu ti-close"></i></a>
-                    <div class="navbar-brand">
-                        <!-- Logo icon -->
-                        <a href="index.html">
-                            <b class="logo-icon">
-                                <!-- Dark Logo icon -->
-                                <img src="../images/logo.png" alt="homepage" class="dark-logo" width="60" />
-                                <!-- Light Logo icon -->
-                            </b>
-                        </a>
-                    </div>
+        <header class="topbar bg-primary" >
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+                <a class="navbar-brand" href="index.html">
+                    <b class="logo-icon">
+                        <img src="../images/logo.png" alt="homepage" class="dark-logo" width="60" />
+                    </b>
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse border-0"  id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                   
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0);" class="nav-link">College home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="javascript:void(0);" class="nav-link">Hepldesk</a>
 
-                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
-                        data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
-                            class="ti-more"></i></a>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Logo -->
-                <!-- ============================================================== -->
-                <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                    <!-- ============================================================== -->
-                    <!-- toggle and nav items -->
-                    <!-- ============================================================== -->
-
-                    <ul class="navbar-nav float-left mr-auto">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">Dashboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0);" class="nav-link">College home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0);" class="nav-link">Helpdesk</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="settings.html" class="nav-link">Settings</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <p class="nav-link dropdown-toggle pl-md-3 position-relative" href="javascript:void(0)"
-                                id="caret-down" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                Other links
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="settings.html">Settings</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Other links
                                 <span class="">
-                                    <i class="fas fa-caret-down"></i></span>
-                            </p>
-                            <div class="dropdown-menu dropdown-menu-left animated bounceInDown">
-                                <ul class="list-style-none">
-                                    <li>
-                                        <div class="message-center position-relative">
-                                            <!-- Message -->
-                                            <a href="biodata.html" class="message-item d-flex px-3">
-                                                <div class=" rounded-circle"><img
-                                                        src="https://portal.yabatech.edu.ng/portalplus/assets/icons/user.svg"
-                                                        alt="biodata" width="23"></div>
-                                                <div class="w-100 pr-1 pl-2">
-                                                    <h6 class="mt-2 message-title mb-0 ">Biodata</h6>
+                                    <i class="fas fa-caret-down"></i>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="biodata.html" class="dropdown-item d-flex px-3">
+                                <div class=" rounded-circle"><img
+                                    src="https://portal.yabatech.edu.ng/portalplus/assets/icons/user.svg"
+                                    alt="biodata" width="23">
+                                </div>
+                                <div class="w-100 pr-1 pl-2">
+                                    <h6 class="mt-2 message-title mb-0 ">Biodata</h6>
+                                </div>
+                            </a>
+                        
+                            <a href="fees.html" class="dropdown-item d-flex px-3">
+                                <div class="rounded-circle  mt-0"><img
+                                    src="https://portal.yabatech.edu.ng/portalplus/assets/icons/money_2.svg"
+                                    alt="reg" width="23">
+                                </div>
+                                <div class="w-100 pr-1 pl-2">
+                                    <h6 class="mt-2 message-title text-nowrap mb-0 ">Fee payment &
+                                    registration</h6>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="dropdown-item d-flex px-3">
+                                <div class="rounded-circle "><img
+                                    src="https://portal.yabatech.edu.ng/portalplus/assets/icons/hostel.svg"
+                                    alt="accomodation" width="23">
+                                </div>
+                                <div class="w-100 pr-1 pl-2">
+                                    <h6 class="mt-2 message-title text-nowrap mb-0 ">Hostel &
+                                    accomodation</h6>
 
-                                                </div>
-                                            </a>
-                                            <a href="fees.html" class="message-item d-flex px-3">
-                                                <div class="rounded-circle  mt-0"><img
-                                                        src="https://portal.yabatech.edu.ng/portalplus/assets/icons/money_2.svg"
-                                                        alt="reg" width="23"></div>
-                                                <div class="w-100 pr-1 pl-2">
-                                                    <h6 class="mt-2 message-title text-nowrap mb-0 ">Fee payment &
-                                                        registration</h6>
-
-                                                </div>
-                                            </a>
-                                            <a href="javascript:void(0)" class="message-item d-flex px-3">
-                                                <div class="rounded-circle "><img
-                                                        src="https://portal.yabatech.edu.ng/portalplus/assets/icons/hostel.svg"
-                                                        alt="accomodation" width="23"></div>
-                                                <div class="w-100 pr-1 pl-2">
-                                                    <h6 class="mt-2 message-title text-nowrap mb-0 ">Hostel &
-                                                        accomodation</h6>
-
-                                                </div>
-                                            </a>
-                                            <a href="javascript:void(0)" class="message-item d-flex px-3">
-                                                <div class="rounded-circle "><img
-                                                        src="https://portal.yabatech.edu.ng/portalplus/assets/icons/checklist.svg"
-                                                        alt="confirmation" width="23"></div>
-                                                <div class="w-100 pr-1 pl-2">
-                                                    <h6 class="mt-2 message-title text-nowrap mb-0 ">Payment
-                                                        confirmation and validation</h6>
-
-                                                </div>
-                                            </a>
-
-                                </ul>
-                            </div>
-                        </li>
-
-
-
-                    </ul>
-
-                    <ul class="navbar-nav float-right">
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="dropdown-item d-flex px-3">
+                                <div class="rounded-circle "><img
+                                    src="https://portal.yabatech.edu.ng/portalplus/assets/icons/checklist.svg"
+                                    alt="confirmation" width="23">
+                                </div>
+                                <div class="w-100 pr-1 pl-2">
+                                    <h6 class="mt-2 message-title text-nowrap mb-0 ">Payment
+                                    confirmation and validation</h6>
+                                </div>
+                            </a>
+                      </div>
+                    </li>
+                   
+                  </ul>
+                  <div>
+                    <ul class="navbar-nav">
 
                         <li class="nav-item d-flex">
-                            <div>
+                            <div class="mt-2">
                                 <img src="../assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle mr-2"
                                     width="40">
                                 <span class="text-dark">Foluke Odusanya</span>
                             </div>
 
-                            <span> <a href="">
+                            <span> 
+                                <a href="">
                                     <div class=" sl-icon text-white font-20">
                                         <i class="icon-power"></i>
                                     </div>
@@ -163,14 +140,11 @@
 
 
                         </li>
-
-
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                    </ul>
+                  </div>
+                  
                 </div>
-            </nav>
+              </nav>
+           
         </header>
         <!-- ============================================================== -->
         <!-- End Topbar header -->
